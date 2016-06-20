@@ -10,7 +10,7 @@
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,60 +20,43 @@
     <![endif]-->
   </head>
   <body>
-   <div class="navbar">
-  <div class="navbar-inner">
-    <div class="container">
-      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </a>
-      <a class="brand" href="#">Lava Jato</a>
-      <div class="nav-collapse">
-        <ul class="nav">
-          <li class="active"><a href="#">Home</a></li>
-            <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Consultas <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Ordem de serviço</a></li>
-              <li><a href="#">Cliente</a></li>
-              <li><a href="#">Serviço</a></li>
-              <li class="divider"></li>
-              <li class="nav-header">Nav header</li>
-              <li><a href="#">Separated link</a></li>
-              <li><a href="#">One more separated link</a></li>
-            </ul>
-          </li>                    
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li class="divider"></li>
-              <li class="nav-header">Nav header</li>
-              <li><a href="#">Separated link</a></li>
-              <li><a href="#">One more separated link</a></li>
-            </ul>
-          </li>
-        </ul>    
-            <ul class="nav pull-right">
-          <li class="divider-vertical"></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div><!-- /.nav-collapse -->
-    </div>
-  </div><!-- /navbar-inner -->
-</div>
+   <nav>
+	<ul>
+		<table class="MenuTopo">
+			<tr>
+				<td><li><a href="home.jsp">Home</a></li></td>
+				<td><li><a href="cliente.jsp">Cliente</a>
+						<ul class="subMenuTopo">
+							<li class="subMenuTopoCliente"><a
+								href="cliente-cadastrar.jsp">Cadastrar</a></li>
+							<li class="subMenuTopoCliente"><a
+								href="cliente-pesquisar.jsp">Pesquisar</a></li>
+						</ul></li></td>
+				<td><li><a href="veiculo.jsp">Veículo</a>
+						<ul class="subMenuTopo">
+							<li class="subMenuTopoVeiculo"><a
+								href="veiculo-cadastrar.jsp">Cadastrar</a></li>
+							<li class="subMenuTopoVeiculo"><a
+								href="veiculo-pesquisar.jsp">Pesquisar</a></li>
+						</ul></li></td>
+				<td><li><a href="servico.jsp"> Serviço</a>
+						<ul class="subMenuTopo">
+							<li class="subMenuTopoServico"><a
+								href="servico-cadastrar.jsp">Cadastrar</a></li>
+							<li class="subMenuTopoServico"><a
+								href="servico-pesquisar.jsp">Pesquisar</a></li>
+						</ul></li></td>
+				<td><li><a href="conserto.jsp"> Conserto </a>
+						<ul class="subMenuTopo">
+							<li class="subMenuTopoConserto"><a
+								href="conserto-agendar.jsp">Agendar</a></li>
+							<li class="subMenuTopoConserto"><a
+								href="conserto-pesquisar.jsp">Pesquisar</a></li>
+						</ul></li></td>
+			</tr>
+		</table>
+	</ul>
+</nav>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
