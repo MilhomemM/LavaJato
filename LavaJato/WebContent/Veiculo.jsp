@@ -51,6 +51,7 @@
 
 	<div class="container body">
 
+
 		<div class="main_container">
 			<!-- page content -->
 			<div class="" role="main">
@@ -60,7 +61,7 @@
 						<div class="col-md-12 col-sm-12 col-xs-12">
 							<div class="x_panel">
 								<div class="x_title">
-									<h2>Serviços</h2>
+									<h2>Veiculo</h2>
 									<div class="clearfix"></div>
 								</div>
 								<div class="x_content">
@@ -70,55 +71,74 @@
 
 										<div class="form-group">
 											<label class="control-label col-md-3 col-sm-3 col-xs-12"
-												for="TipoVeiculo">Tipo veiculo <span class="required">*</span>
+												for="Placa">Placa <span class="required">*</span>
+											</label>
+											<div class="col-md-6 col-sm-6 col-xs-12">
+												<input type="text" id="placa" required
+													class="form-control col-md-7 col-xs-12">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label col-md-3 col-sm-3 col-xs-12"
+												for="Ano">Ano <span class="required">*</span>
+											</label>
+											<div class="col-md-6 col-sm-6 col-xs-12">
+												<input type="text" id="ano" required
+													class="form-control col-md-7 col-xs-12">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label col-md-3 col-sm-3 col-xs-12"
+												for="Modelo">Modelo <span class="required">*</span>
+											</label>
+											<div class="col-md-6 col-sm-6 col-xs-12">
+												<input type="text" id="modelo" required
+													class="form-control col-md-7 col-xs-12">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label col-md-3 col-sm-3 col-xs-12"
+												for="Cor">Cor <span class="required">*</span>
+											</label>
+											<div class="col-md-6 col-sm-6 col-xs-12">
+												<input type="text" id="cor" required
+													class="form-control col-md-7 col-xs-12">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label col-md-3 col-sm-3 col-xs-12"
+												for="Observacao">Observação (10 chars min, 100 max)
+												:</label>
+											<div class="col-md-6 col-sm-6 col-xs-12">
+												<textarea id="observacao" required class="form-control"
+													name="message" data-parsley-trigger="keyup"
+													data-parsley-minlength="10" data-parsley-maxlength="100"
+													data-parsley-minlength-message="Come on! You need to enter at least a 20 caracters long comment.."
+													data-parsley-validation-threshold="10"></textarea>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label col-md-3 col-sm-3 col-xs-12"
+												for="first-name">Nome do cliente <span
+												class="required">*</span>
+											</label>
+											<div class="col-md-6 col-sm-6 col-xs-12">
+												<input type="text" name="Nome" id="nome" required
+													class="form-control col-md-7 col-xs-12">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label col-md-3 col-sm-3 col-xs-12"
+												for="TipoVeiculo">Tipo veiculo <span
+												class="required">*</span>
 											</label>
 											<div class="col-md-6 col-sm-6 col-xs-12">
 												<input type="text" id="tipoveiculo" required
 													class="form-control col-md-7 col-xs-12">
 											</div>
 										</div>
-										<div class="form-group">
-											<label class="control-label col-md-3 col-sm-3 col-xs-12"
-												for="TipoServico">Tipo serviço <span class="required">*</span>
-											</label>
-											<div class="col-md-6 col-sm-6 col-xs-12">
-												<input type="text" id="tiposervico" required
-													class="form-control col-md-7 col-xs-12">
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="control-label col-md-3 col-sm-3 col-xs-12"
-												for="Preco">Preço <span class="required">*</span>
-											</label>
-											<div class="col-md-6 col-sm-6 col-xs-12">
-												<input type="text" id="preco" required
-													class="form-control col-md-7 col-xs-12">
-											</div>
-										</div>
-										<div class="form-group">
-											<label class="control-label col-md-3 col-sm-3 col-xs-12"
-												for="Porte">Porte <span class="required">*</span>
-											</label>
-											<div class="col-md-6 col-sm-6 col-xs-12">
-												<input type="text" id="porte" required
-													class="form-control col-md-7 col-xs-12">
-											</div>
-										</div>
 										
-										<div class="form-group">
-											<label class="control-label col-md-3 col-sm-3 col-xs-12">Selecione
-												serviço</label>
-											<div class="col-md-6 col-sm-6 col-xs-12">
-												<select class="select2_single form-control" tabindex="-1">
-													<option value="LL">Lavar lataria</option>
-													<option value="LM">Lavar motor</option>
-													<option value="LC">Lavar casco</option>
-													<option value="AR">Aspirar</option>
-													<option value="PR">Polir</option>
-													<option value="ER">Encerar</option>
-												</select>
-											</div>
-										</div>
+										<div class="ln_solid"></div>
 										<div class="form-group">
 											<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
 												<input type="button" class="btn btn-danger" value="Voltar">
