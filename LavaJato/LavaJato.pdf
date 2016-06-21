@@ -1,0 +1,29 @@
+Desenvolver um sistema baseado em plataforma web capaz de gerenciar informações
+
+sobre os veículos e clientes e controlar serviços em um Lava Jato. O sistema deve
+
+funcionar em dispositivos móveis.
+
+O sistema deve suportar dois tipos de usuário: um que representa o administrado do
+
+sistema e outro que é o atendente. Para cada veículo, devem ser registradas as
+
+informações de placa, ano, marca, modelo, cor, observações e o cliente ao qual pertence.
+
+Vários tipos de veículos são atendidos e podem assim ser divididos: Carros de passeio
+
+(pequeno, médio, grande), Caminhão (pequeno, médio, grande), ônibus (pequeno, grande)
+
+e Moto. O preço dos serviços varia de acordo com o tipo e o porte do veículo. Vários
+
+serviços são ofertados: lavar lataria, lavar motor, lavar casco, aspirar, polir, encerar. As
+
+ordens de serviços devem identificar o veículo, os serviços e preços, preço total, hora de
+
+abertura, hora encerramento. Os clientes devem ser identificados por nome, telefone,
+
+e­mail.
+
+As informações relativas a veículos são adicionadas e mantidas pelo administrador do
+
+sistema, já as ordens de serviço são abertas e encerradas pelo atendente.
