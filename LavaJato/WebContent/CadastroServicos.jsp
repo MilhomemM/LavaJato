@@ -15,7 +15,6 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
 <link href="css/animate.min.css" rel="stylesheet">
-<link href="css/animate.css" rel="stylesheet">
 
 <!-- Custom styling plus plugins -->
 <link href="css/custom.css" rel="stylesheet">
@@ -61,76 +60,95 @@
 						<div class="col-md-12 col-sm-12 col-xs-12">
 							<div class="x_panel">
 								<div class="x_title">
-									<h2>Pesquisa Ordem de Servico</h2>
+									<h2>Serviços</h2>
 									<div class="clearfix"></div>
 								</div>
+								<div class="x_content">
+									<br />
+									<form id="demo-form2" data-parsley-validate
+										class="form-horizontal form-label-left">
 
-								<div class="container">
-									<div class="row">
-										<div class="col-lg-4 col-lg-offset-4">
-											<input type="search" id="search" value=""
-												class="form-control"
-												placeholder="Pesquisa">
+										<div class="form-group">
+											<label class="control-label col-md-3 col-sm-3 col-xs-12"
+												for="TipoVeiculo">Tipo veiculo <span class="required">*</span>
+											</label>
+											<div class="col-md-6 col-sm-6 col-xs-12">
+												<input type="text" id="tipoveiculo" required
+													class="form-control col-md-7 col-xs-12">
+											</div>
 										</div>
-									</div>
-									<div class="row">
-										<div class="col-lg-12">
-											<table class="table" id="table">
-												<thead>
-													<tr>
-													<th>Numero Indentificador</th>
-													<th>Hora Abertura</th>
-    												<th>Hora Encerramento</th>
-    												<th>Veiculo</th>
-    												<th>Serviço</th>
-    												<th>Preço Total</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>001</td>
-														<td>8:00 hrs</td>
-														<td>9:00 hrs</td>
-														<td>Moto</td>
-														<td>Lavagem</td>
-														<td>R$15</td>
-													</tr>
-													<tr>
-														<td>002</td>
-														<td>10:00 hrs</td>
-														<td>11:00 hrs</td>
-														<td>Carro</td>
-														<td>Lavagem</td>
-														<td>R$25</td>
-													</tr>
-													<tr>
-														<td>003</td>
-														<td>12:00 hrs</td>
-														<td>14:00 hrs</td>
-														<td>Caminhão</td>
-														<td>Lavagem</td>
-														<td>R$40</td>
-													</tr>
-												</tbody>
-											</table>
-											<hr>
+										<div class="form-group">
+											<label class="control-label col-md-3 col-sm-3 col-xs-12"
+												for="TipoServico">Tipo serviço <span class="required">*</span>
+											</label>
+											<div class="col-md-6 col-sm-6 col-xs-12">
+												<input type="text" id="tiposervico" required
+													class="form-control col-md-7 col-xs-12">
+											</div>
 										</div>
-									</div>
-								</div>
-								<script
-									src="//rawgithub.com/stidges/jquery-searchable/master/dist/jquery.searchable-1.0.0.min.js"></script>
-								<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-									<input type="button" class="btn btn-danger" value="Voltar">
-									<input type="reset" class="btn btn-primary" value="Redefinir">
-									<input type="submit" class="btn btn-success" value="Confirmar">
+										<div class="form-group">
+											<label class="control-label col-md-3 col-sm-3 col-xs-12"
+												for="Preco">Preço <span class="required">*</span>
+											</label>
+											<div class="col-md-6 col-sm-6 col-xs-12">
+												<input type="text" id="preco" required
+													class="form-control col-md-7 col-xs-12">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label col-md-3 col-sm-3 col-xs-12"
+												for="Porte">Porte <span class="required">*</span>
+											</label>
+											<div class="col-md-6 col-sm-6 col-xs-12">
+												<input type="text" id="porte" required
+													class="form-control col-md-7 col-xs-12">
+											</div>
+										</div>
+										
+										<div class="form-group">
+											<label class="control-label col-md-3 col-sm-3 col-xs-12">Selecione
+												serviço</label>
+											<div class="col-md-6 col-sm-6 col-xs-12">
+												<select class="select2_single form-control" tabindex="-1">
+													<option value="LL">Lavar lataria</option>
+													<option value="LM">Lavar motor</option>
+													<option value="LC">Lavar casco</option>
+													<option value="AR">Aspirar</option>
+													<option value="PR">Polir</option>
+													<option value="ER">Encerar</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+												<input type="button" class="btn btn-danger" value="Voltar">
+												<input type="reset" class="btn btn-primary" value="Redefinir">
+												<input type="submit" class="btn btn-success" value="Confirmar">
+											</div>
+										</div>
+									</form>
 								</div>
 							</div>
-
-							</form>
 						</div>
 					</div>
-				</div>
-			</div>
+
+					<script type="text/javascript">
+						$(document).ready(
+								function() {
+									$('#birthday').daterangepicker(
+											{
+												singleDatePicker : true,
+												calender_style : "picker_4"
+											},
+											function(start, end, label) {
+												console.log(
+														start.toISOString(),
+														end.toISOString(),
+														label);
+											});
+								});
+					</script>
+
 					<!-- CORPO DO PROGRAMA EH AQUI NESSA POHA! AQUI É BORIBIUDER POHA! É 13 MEMO! -->
 
 				</div>
@@ -151,7 +169,6 @@
 		<div id="notif-group" class="tabbed_notifications"></div>
 	</div>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/bootstrap.js"></script>
 
 	<!-- chart js -->
 	<script src="js/chartjs/chart.min.js"></script>

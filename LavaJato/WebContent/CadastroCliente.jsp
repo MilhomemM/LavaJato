@@ -53,7 +53,6 @@
 			<!-- page content -->
 			<div class="right_col" role="main">
 				<div class="">
-
 					<div class="" role="main">
 						<div class="">
 							<div class="clearfix"></div>
@@ -61,7 +60,7 @@
 								<div class="col-md-12 col-sm-12 col-xs-12">
 									<div class="x_panel">
 										<div class="x_title">
-											<h2>Lava Jato</h2>
+											<h2>Cliente</h2>
 											<div class="clearfix"></div>
 										</div>
 										<div class="x_content">
@@ -71,23 +70,20 @@
 
 												<div class="form-group">
 													<label class="control-label col-md-3 col-sm-3 col-xs-12"
-														for="first-name">Hora Abertura <span
-														class="required">*</span>
+														for="first-name">Nome <span class="required">*</span>
 													</label>
 													<div class="col-md-6 col-sm-6 col-xs-12">
-														<input type="text" name="HoraAbertura" id="horaabertura"
-															required class="form-control col-md-7 col-xs-12">
+														<input type="text" name="Nome" id="nome" required
+															class="form-control col-md-7 col-xs-12">
 													</div>
 
 												</div>
 												<div class="form-group">
 													<label class="control-label col-md-3 col-sm-3 col-xs-12"
-														for="first-name">Hora Encerramento <span
-														class="required">*</span>
+														for="first-name">Telefone <span class="required">*</span>
 													</label>
 													<div class="col-md-6 col-sm-6 col-xs-12">
-														<input type="text" name="HoraEncerramento"
-															id="horaencerramento" required
+														<input type="text" name="Telefone" id="telefone" required
 															class="form-control col-md-7 col-xs-12">
 													</div>
 
@@ -95,50 +91,25 @@
 
 												<div class="form-group">
 													<label class="control-label col-md-3 col-sm-3 col-xs-12"
-														for="first-name">Veiculo <span class="required">*</span>
+														for="first-name">Email <span class="required">*</span>
 													</label>
 													<div class="col-md-6 col-sm-6 col-xs-12">
-														<input type="text" name="Veiculo" id="veiculo" required
+														<input type="text" name="Email" id="email" required
 															class="form-control col-md-7 col-xs-12">
 													</div>
 
 												</div>
-
-												<div class="form-group">
-													<label class="control-label col-md-3 col-sm-3 col-xs-12"
-														for="first-name">Serviço <span class="required">*</span>
-													</label>
-													<div class="col-md-6 col-sm-6 col-xs-12">
-														<input type="text" name="Servico" id="servico" required
-															class="form-control col-md-7 col-xs-12">
-													</div>
-
-												</div>
-
-												<div class="form-group">
-													<label class="control-label col-md-3 col-sm-3 col-xs-12"
-														for="first-name">Preço Total <span
-														class="required">*</span>
-													</label>
-													<div class="col-md-6 col-sm-6 col-xs-12">
-														<input type="text" type="text" name="Precototal"
-															id="precototal" required
-															class="form-control col-md-7 col-xs-12">
-													</div>
-
-												</div>
-
 
 
 												<div class="form-group">
 													<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-														<input type="button" class="btn btn-danger" value="Voltar">
-														<input type="reset" class="btn btn-primary"
-															value="Redefinir"> <input type="submit"
-															class="btn btn-success" value="Confirmar">
+														<a href="Home.jsp"><input type="button"
+															class="btn btn-danger" value="Voltar"></a> <input
+															type="reset" class="btn btn-primary" value="Redefinir">
+														<a href="Home.jsp"><input type="submit" class="btn btn-success"
+															value="Confirmar">
 													</div>
 												</div>
-
 											</form>
 										</div>
 									</div>
@@ -170,13 +141,7 @@
 												});
 							</script>
 
-
-
-
-
-
-
-
+							<!-- CORPO DO PROGRAMA EH AQUI NESSA POHA! AQUI É BORIBIUDER POHA! É 13 MEMO! -->
 
 						</div>
 						<!-- /page content -->
@@ -415,12 +380,3 @@
 			<!-- /editor -->
 </body>
 </html>
-
-
-
-
-
-
-
-
-

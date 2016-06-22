@@ -1,7 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,14 +32,14 @@
 							<li class="subMenuTopoCliente"><a
 								href="cliente-pesquisar.jsp">Pesquisar</a></li>
 						</ul></li></td>
-				<td><li><a href="veiculo.jsp">Veículo</a>
+				<td><li><a href="veiculo.jsp">VeÃ­culo</a>
 						<ul class="subMenuTopo">
 							<li class="subMenuTopoVeiculo"><a
 								href="veiculo-cadastrar.jsp">Cadastrar</a></li>
 							<li class="subMenuTopoVeiculo"><a
 								href="veiculo-pesquisar.jsp">Pesquisar</a></li>
 						</ul></li></td>
-				<td><li><a href="servico.jsp"> Serviço</a>
+				<td><li><a href="servico.jsp"> ServiÃ§o</a>
 						<ul class="subMenuTopo">
 							<li class="subMenuTopoServico"><a
 								href="servico-cadastrar.jsp">Cadastrar</a></li>

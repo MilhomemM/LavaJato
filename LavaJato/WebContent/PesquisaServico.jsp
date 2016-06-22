@@ -1,22 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<%@ page contentType="text/html; charset=UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!doctype html>
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <!-- Meta, title, CSS, favicons, etc. -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Lava Jato</title>
+<title>Lava Jato | Nome da Página</title>
 
 <!-- Bootstrap core CSS -->
 
 <link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/bootstrap.css" rel="stylesheet">
-
 <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
 <link href="css/animate.min.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
 
 <!-- Custom styling plus plugins -->
 <link href="css/custom.css" rel="stylesheet">
@@ -32,7 +31,6 @@
 <link href="css/select/select2.min.css" rel="stylesheet">
 <!-- switchery -->
 <link rel="stylesheet" href="css/switchery/switchery.min.css" />
-
 <script src="js/jquery.min.js"></script>
 
 <!--[if lt IE 9]>
@@ -47,13 +45,16 @@
 
 </head>
 
-
 <body class="nav-md">
-
 	<div class="container body">
 		<div class="main_container">
+
+			<%@ include file="menu.jsp"%>
+
 			<!-- page content -->
-			<div class="" role="main">
+			<div class="right_col" role="main">
+				<div class="">
+<div class="" role="main">
 				<div class="">
 					<div class="clearfix"></div>
 					<div class="row">
@@ -100,9 +101,9 @@
 														<td>lavar Lataria, Aspirar</td>
 													</tr>
 													<tr>
-														<td>Caminh�o</td>
+														<td>Caminhão</td>
 														<td>lavagem</td>
-														<td>r$40</td>
+														<td>R$40</td>
 														<td>Grande</td>
 														<td>Lavar Motor</td>
 													</tr>
@@ -116,51 +117,27 @@
 								<script
 									src="//rawgithub.com/stidges/jquery-searchable/master/dist/jquery.searchable-1.0.0.min.js"></script>
 								<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-									<input type="button" class="btn btn-danger" value="Botaozim">
-									<input type="reset" class="btn btn-primary" value="Resetzim">
-									<input type="submit" class="btn btn-success" value="Submit">
+									<input type="button" class="btn btn-danger" value="Voltar">
+									<input type="reset" class="btn btn-primary" value="Redefinir">
+									<input type="submit" class="btn btn-success" value="Confirmar">
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+					<!-- CORPO DO PROGRAMA EH AQUI NESSA POHA! AQUI É BORIBIUDER POHA! É 13 MEMO! -->
 
-			<script type="text/javascript">
-				$(document).ready(
-						function() {
-							$('#birthday').daterangepicker(
-									{
-										singleDatePicker : true,
-										calender_style : "picker_4"
-									},
-									function(start, end, label) {
-										console.log(start.toISOString(), end
-												.toISOString(), label);
-									});
-						});
-			</script>
-
-			<!-- /page content -->
-
-			<!-- footer content -->
-			<footer>
-				<div class="">
-					<p class="pull-right">
-						Rodap� maroto <a>Passa o mouse aq e sublinha</a>. | <span
-							class="lead"> <i class="fa fa-paw"></i> Nome do projetim
-						</span>
-					</p>
 				</div>
-				<div class="clearfix"></div>
-			</footer>
-			<!-- /footer content -->
+				<!-- /page content -->
 
+				<!-- footer content -->
+				<%@ include file="rodape.jsp"%>
+				<!-- /footer content -->
+
+			</div>
 		</div>
-
 	</div>
-	</div>
-
 	<div id="custom_notifications" class="custom-notifications dsp_none">
 		<ul class="list-unstyled notifications clearfix"
 			data-tabbed_notifications="notif-group">
@@ -168,7 +145,6 @@
 		<div class="clearfix"></div>
 		<div id="notif-group" class="tabbed_notifications"></div>
 	</div>
-
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 
@@ -219,7 +195,6 @@
 		});
 	</script>
 	<script src="js/custom.js"></script>
-
 
 	<!-- select2 -->
 	<script>
@@ -386,5 +361,4 @@
 	</script>
 	<!-- /editor -->
 </body>
-
 </html>

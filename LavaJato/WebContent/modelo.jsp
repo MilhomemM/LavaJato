@@ -15,7 +15,6 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
 <link href="css/animate.min.css" rel="stylesheet">
-<link href="css/animate.css" rel="stylesheet">
 
 <!-- Custom styling plus plugins -->
 <link href="css/custom.css" rel="stylesheet">
@@ -54,84 +53,119 @@
 			<!-- page content -->
 			<div class="right_col" role="main">
 				<div class="">
-<div class="" role="main">
-				<div class="">
-					<div class="clearfix"></div>
+<div class="clearfix"></div>
 					<div class="row">
 						<div class="col-md-12 col-sm-12 col-xs-12">
 							<div class="x_panel">
 								<div class="x_title">
-									<h2>Pesquisa Ordem de Servico</h2>
+									<h2>Veiculo</h2>
 									<div class="clearfix"></div>
 								</div>
+								<div class="x_content">
+									<br />
+									<form id="demo-form2" data-parsley-validate
+										class="form-horizontal form-label-left">
 
-								<div class="container">
-									<div class="row">
-										<div class="col-lg-4 col-lg-offset-4">
-											<input type="search" id="search" value=""
-												class="form-control"
-												placeholder="Pesquisa">
+										<div class="form-group">
+											<label class="control-label col-md-3 col-sm-3 col-xs-12"
+												for="Placa">Placa <span class="required">*</span>
+											</label>
+											<div class="col-md-6 col-sm-6 col-xs-12">
+												<input type="text" id="placa" required
+													class="form-control col-md-7 col-xs-12">
+											</div>
 										</div>
-									</div>
-									<div class="row">
-										<div class="col-lg-12">
-											<table class="table" id="table">
-												<thead>
-													<tr>
-													<th>Numero Indentificador</th>
-													<th>Hora Abertura</th>
-    												<th>Hora Encerramento</th>
-    												<th>Veiculo</th>
-    												<th>Serviço</th>
-    												<th>Preço Total</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>001</td>
-														<td>8:00 hrs</td>
-														<td>9:00 hrs</td>
-														<td>Moto</td>
-														<td>Lavagem</td>
-														<td>R$15</td>
-													</tr>
-													<tr>
-														<td>002</td>
-														<td>10:00 hrs</td>
-														<td>11:00 hrs</td>
-														<td>Carro</td>
-														<td>Lavagem</td>
-														<td>R$25</td>
-													</tr>
-													<tr>
-														<td>003</td>
-														<td>12:00 hrs</td>
-														<td>14:00 hrs</td>
-														<td>Caminhão</td>
-														<td>Lavagem</td>
-														<td>R$40</td>
-													</tr>
-												</tbody>
-											</table>
-											<hr>
+										<div class="form-group">
+											<label class="control-label col-md-3 col-sm-3 col-xs-12"
+												for="Ano">Ano <span class="required">*</span>
+											</label>
+											<div class="col-md-6 col-sm-6 col-xs-12">
+												<input type="text" id="ano" required
+													class="form-control col-md-7 col-xs-12">
+											</div>
 										</div>
-									</div>
-								</div>
-								<script
-									src="//rawgithub.com/stidges/jquery-searchable/master/dist/jquery.searchable-1.0.0.min.js"></script>
-								<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-									<input type="button" class="btn btn-danger" value="Voltar">
-									<input type="reset" class="btn btn-primary" value="Redefinir">
-									<input type="submit" class="btn btn-success" value="Confirmar">
+										<div class="form-group">
+											<label class="control-label col-md-3 col-sm-3 col-xs-12"
+												for="Modelo">Modelo <span class="required">*</span>
+											</label>
+											<div class="col-md-6 col-sm-6 col-xs-12">
+												<input type="text" id="modelo" required
+													class="form-control col-md-7 col-xs-12">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label col-md-3 col-sm-3 col-xs-12"
+												for="Cor">Cor <span class="required">*</span>
+											</label>
+											<div class="col-md-6 col-sm-6 col-xs-12">
+												<input type="text" id="cor" required
+													class="form-control col-md-7 col-xs-12">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label col-md-3 col-sm-3 col-xs-12"
+												for="Observacao">Observação (10 chars min, 100 max)
+												:</label>
+											<div class="col-md-6 col-sm-6 col-xs-12">
+												<textarea id="observacao" required class="form-control"
+													name="message" data-parsley-trigger="keyup"
+													data-parsley-minlength="10" data-parsley-maxlength="100"
+													data-parsley-minlength-message="Come on! You need to enter at least a 20 caracters long comment.."
+													data-parsley-validation-threshold="10"></textarea>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label col-md-3 col-sm-3 col-xs-12"
+												for="first-name">Nome do cliente <span
+												class="required">*</span>
+											</label>
+											<div class="col-md-6 col-sm-6 col-xs-12">
+												<input type="text" name="Nome" id="nome" required
+													class="form-control col-md-7 col-xs-12">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="control-label col-md-3 col-sm-3 col-xs-12"
+												for="TipoVeiculo">Tipo veiculo <span
+												class="required">*</span>
+											</label>
+											<div class="col-md-6 col-sm-6 col-xs-12">
+												<input type="text" id="tipoveiculo" required
+													class="form-control col-md-7 col-xs-12">
+											</div>
+										</div>
+										
+										<div class="ln_solid"></div>
+										<div class="form-group">
+											<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+												<input type="button" class="btn btn-danger" value="Voltar">
+												<input type="reset" class="btn btn-primary" value="Redefinir">
+												<input type="submit" class="btn btn-success" value="Confirmar">
+											</div>
+										</div>
+									</form>
 								</div>
 							</div>
-
-							</form>
 						</div>
 					</div>
-				</div>
-			</div>
-					<!-- CORPO DO PROGRAMA EH AQUI NESSA POHA! AQUI É BORIBIUDER POHA! É 13 MEMO! -->
+
+					<script type="text/javascript">
+						$(document).ready(
+								function() {
+									$('#birthday').daterangepicker(
+											{
+												singleDatePicker : true,
+												calender_style : "picker_4"
+											},
+											function(start, end, label) {
+												console.log(
+														start.toISOString(),
+														end.toISOString(),
+														label);
+											});
+								});
+					</script>
+
 
 				</div>
 				<!-- /page content -->
@@ -151,7 +185,6 @@
 		<div id="notif-group" class="tabbed_notifications"></div>
 	</div>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/bootstrap.js"></script>
 
 	<!-- chart js -->
 	<script src="js/chartjs/chart.min.js"></script>
